@@ -18,7 +18,7 @@ public class OrdersByWeek {
 
         float SumRevenuePerDays = revenuePerDay * offerDays;
         System.out.println("Total sales for 6 days is EUR " + SumRevenuePerDays);
-        System.out.println("Revenue per day: " + revenuePerDay);
+        System.out.printf("Revenue per day: %.2f.\n", revenuePerDay);
 
 
 
@@ -32,7 +32,7 @@ public class OrdersByWeek {
         offerDays = 10;
         SumRevenuePerDays = revenuePerDay * offerDays;
         System.out.println("Total sales for 10 days is EUR " + SumRevenuePerDays);
-        System.out.println("Revenue per day: " + revenuePerDay);
+        System.out.println("Revenue per day: %.2f.\n " + revenuePerDay);
 
     }
 }
