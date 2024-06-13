@@ -7,16 +7,36 @@ import java.util.Scanner;
 public class SortedArray {
     public static void main(String[] args) {
 
-        Random rand = new Random();
+        int[] array = new int[15];
+
+        fillArray(array);
+        System.out.println("It`s an array of " + array.length + " elements " + Arrays.toString(array));
+
+        sortArray(array);
+        System.out.println("It`s a sorted array " + Arrays.toString(array));
+
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter searching number: ");
         int numberToFind = scanner.nextInt();
 
-        int[] array = new int[15];
+        int index = binarySearch(array, numberToFind);
+
+        if (index == -1) {
+            System.out.println("Number " + numberToFind + " not found in the array");
+        } else {
+            System.out.println("Number " + numberToFind + " have index " + index + " in sorted array");
+        }
+
+    }
+
+    public static void fillArray(int[] array) {
+        Random rand = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = rand.nextInt(100);
         }
-        System.out.println("It`s an array of 15 elements " + Arrays.toString(array));
+    }
 
+    public static void sortArray(int[] array) {
         for (int i = 1; i < array.length; i++) {
             int key = array[i];
             int j = i - 1;
@@ -26,17 +46,6 @@ public class SortedArray {
             }
             array[j + 1] = key;
         }
-        System.out.println("It`s a sorted array " + Arrays.toString(array));
-
-        System.out.println("Please enter searching number: ");
-        int index = binarySearch(array, numberToFind);
-
-        if (index == -1) {
-            System.out.println("Number " + numberToFind + " not found in the array");
-        } else {
-            System.out.println("Number " + numberToFind + " have index " + index + " in sorted array");
-        }
-
     }
 
     public static int binarySearch(int[] array, int target) {
