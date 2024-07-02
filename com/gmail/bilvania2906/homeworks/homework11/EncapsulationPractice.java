@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class EncapsulationPractice {
 
-    // Employee.java
     public static class Employee {
         private String fullName;
         private String position;
@@ -20,7 +19,6 @@ public class EncapsulationPractice {
             this.age = age;
         }
 
-        // Getters and Setters for encapsulation
         public String getFullName() {
             return fullName;
         }
@@ -62,9 +60,8 @@ public class EncapsulationPractice {
         }
     }
 
-    // Car.java
     public static class Car {
-        // Private methods to encapsulate the internal behavior
+
         private void startElectricity() {
             System.out.println("Starting electricity");
         }
@@ -77,7 +74,6 @@ public class EncapsulationPractice {
             System.out.println("Starting fuel system");
         }
 
-        // Public method that uses the private methods
         public void start() {
             startElectricity();
             startCommand();
@@ -85,7 +81,6 @@ public class EncapsulationPractice {
             System.out.println("Car has started");
         }
 
-        // Main method to demonstrate the functionality
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
