@@ -54,7 +54,7 @@ public class PracticeOfPolymorphism {
         shapes[2] = new Square(7);
 
         double totalArea = calculateTotalArea(shapes);
-        System.out.println("Сумарна площа всіх фігур: " + totalArea);
+        System.out.println("Total area of all shapes: " + totalArea);
     }
 
     public static double calculateTotalArea(Shape[] shapes) {
