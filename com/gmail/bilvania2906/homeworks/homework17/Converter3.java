@@ -6,8 +6,10 @@ public class Converter3 {
     public static void main(String[] args) {
         System.out.println("Converter app.");
 
+        System.out.println("App for measures converting.");
         double kgs=5;
         double pounds=convKgsToPounds(kgs);
+        System.out.println("Result is: "+pounds+" pounds");
     }
 
     private static double convKgsToPounds(double kgs) {
