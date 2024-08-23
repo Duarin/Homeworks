@@ -11,7 +11,7 @@ public class Converter3 {
         double pnds = 12;
         double pounds = convKgsToPounds(kgs);
         double kilos = convPoundsToKilos(pnds);
-        System.out.println("Result is: " + pounds + " pounds and "+kilos+" kgs.");
+        System.out.println("Result is: " + pounds + " pounds and " + kilos + " kgs.");
     }
 
     private static double convPoundsToKilos(double pnds) {
