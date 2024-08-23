@@ -12,6 +12,7 @@ public class Converter3 {
         System.out.println("Result is: "+pounds+" pounds");
     }
 
+
     private static double convKgsToPounds(double kgs) {
         return kgs*CONV_K;
     }
