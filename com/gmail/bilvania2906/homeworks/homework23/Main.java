@@ -8,15 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         FileHandler handler = new FileHandler();
-
         String fileName = "myfile";
         String fileContent = "My very important information.";
-
-        // Запис файлу
         String result = handler.writeFile(fileName, fileContent);
         getOutput("RESULT: " + result);
-
-        // Читання файлу
         String content = handler.readFile(BASE_PATH + fileName + ".txt");
         getOutput("FILE CONTENT: " + content);
     }
