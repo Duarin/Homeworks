@@ -10,8 +10,8 @@ public class DataHandler {
         // критичний блок коду
         synchronized (this.fruits) {
             StringBuilder sb = new StringBuilder();
-            AtomicInteger count= new AtomicInteger(1);
-            count = new AtomicInteger(1);
+//            AtomicInteger count= new AtomicInteger(1);
+            AtomicInteger count = new AtomicInteger(1);
             for (String fruit : fruits) {
                 sb.append(String.format("(%d) %s ",
                         count.getAndIncrement(), fruit));

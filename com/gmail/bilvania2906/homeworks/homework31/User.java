@@ -1,6 +1,6 @@
 package com.gmail.bilvania2906.homeworks.homework31;
 
-public class User {
+public final class User {
     private final int id;
     private final String name;
     private final String email;
