@@ -1,12 +1,10 @@
 package com.gmail.bilvania2906.homeworks.homework30;
 
-// Product.java
 public class Product {
     private String name;
     private String category;
     private double price;
 
-    // Конструктор та геттери/сеттери
     public Product(String name, String category, double price) {
         this.name = name;
         this.category = category;
